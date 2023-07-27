@@ -1,0 +1,198 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+% Fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond} % Using EB Garamond
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[symbol]{footmisc} % Provides customized footnote symbols.
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,   
+    urlcolor=black,
+}
+
+\newcommand{\ulhref}[2]{\href{#1}{\underline{#2}}}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\usepackage[margin=0.5in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r} % Top align for better spacing
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  %\textbf{{\LARGE PRIVATE}} & 
+ % \ulhref{mailto:private@gmail.com}{private@gmail.com}  \\
+ 	%    \ulhref{http://www.private.com}{www.private.com} &
+  %\ulhref{https://www.linkedin.com/in/private}{linkedin.com/in/private} \\
+  %  \ulhref{https://github.com/private}{github.com/private} &
+ %  +65-XXXX-XXXX
+%\end{tabular*}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}l}
+    \textbf{{\LARGE Alan Matthew}} & & \\[5pt]
+    \textbf{Address:} 28 College West Avenue, Singapore & 
+    \textbf{Email:} \ulhref{mailto:alan.anggara.matthew@gmail.com}{alan.anggara.matthew@gmail.com} & 
+    \textbf{Phone:} +65 8425-5742 \\
+    \textbf{Website:} \ulhref{http://www.yokurang.com}{www.yokurang.com} &
+    \textbf{LinkedIn:} \ulhref{https://www.linkedin.com/in/alnmathw}{linkedin.com/in/alnmathw} &
+    \textbf{GitHub:} \ulhref{https://github.com/yokurang}{github.com/yokurang} \\
+\end{tabular*}
+
+
+
+%----------SUMMARY-----------------
+\section{Penultimate Student at Yale-NUS College}
+Aspiring Software Engineer with strong fundamentals in Fullstack Development through three Software Engineering internships. Likes building scalable systems that are secure, reliable, and efficient. Passionate about Algorithms and Distributed Programming. 
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Yale-NUS College}{Singapore}
+      {Bachelor of Science in Math and Computer Science;  Minor in Economics;  CAP: 4.80/5.00}{May 2025}
+    \resumeSubItem{Awards}
+      {Recipient of the Kewalram Chanrai Scholarship}         
+    \resumeSubItem{Relevant Coursework}
+      {Data Structures and Algorithms, Operating Systems, Parallel and Distributed Programming}          					
+    \resumeSubItem{Professional Certification}
+      {AWS Cloud Practitioner}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hatcher+}{AI Driven Venture Capital in Singapore}
+      {Software Engineer Intern}{May 2023 - July 2023}
+      \resumeItemListStart
+        \resumeItem{Data Parsing Microservice}
+          {Engineered and deployed a \textbf{Python} microservice in \textbf{AWS} that parses company capitalization documents, analyses the data, and extracts the key information into a structured format, saving manual labour and reducing costs by 13\%.}
+        \resumeItem{Employee Leave Management System}
+          {Implemented a comprehensive employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL} to efficiently handle employee data, manage leave requests, and provide analytical insight into leave trends, boosting HR efficiency.}
+		\resumeItem{Investment Information Smart Contract}
+          {Authored a smart contract using \textbf{Golang} that stores investment data so users can create and management their investments on the Hyperledger Fabric blockchain, enhancing data security for crucial financial transactions. }
+		\resumeItem{Automated Translation Workflow}
+		  {Developed a \textbf{PHP} scheduler to locate untranslated strings in the codebase, use the OpenAI API to predict English sentences for the untranslated strings, automate language updates, and notify the lead developers of the changes.}
+		\resumeItem{Slack Bot for System Monitoring}
+          {Built a Slack Bot using \textbf{Python} to supervise the primary web scraping bot's health and activities, and deliver analytical summaries of the scraped data to the main engineering updates Slack channel, improving system oversight.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Switcheo Labs}{Cryptocurrency Exchange in Singapore}
+      {Software Engineering Intern}{Nov 2022 - Dec 2022}
+      \resumeItemListStart
+        \resumeItem{Consolidated Search API Development}
+          {Engineered a comprehensive search API using \textbf{Golang} that queries multiple databases from the Carbon blockchain, consolidating the results into a single API call and streamlining data retrieval for over 96,000 users.}
+        \resumeItem{Automated Market-Pool Linkage}
+          {Used \textbf{Golang} to automatically link markets with its corresponding liquidity pool and vice versa, eliminating manual intervention and ensuring that all USD \$130 million of capital is correctly allocated across the exchange.}
+        \resumeItem{Transaction Service \& UI}
+          {Implemented a new service to query Switcheo's DEX and record collateralized debt position transactions using \textbf{Typescript} and \textbf{Redis}. Additionally, used \textbf{React} to visualize and summarize CDP trading activities in the exchange for users.}
+        \resumeItem{Telegram Bot for Blockchain Monitoring}
+          {Built a Telegram Bot using \textbf{Typescript} and \textbf{Redis} to monitor transactions in the Carbon blockchain and alert the team about transactions stalled in transit that demand manual attention, increasing operational reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Investree}{P2P Fintech Lending in Jakarta}
+      {Software Engineering Intern}{May 2022 - Aug 2022}
+      \resumeItemListStart
+        \resumeItem{Investment Dashboard Enhancement}
+          {Implemented new features for the investment dashboard using \textbf{Vue.js} and \textbf{Kotlin}, improving the presentation of financial statements and key metrics and providing users with a deeper understanding of their portfolio.}
+        \resumeItem{Covenant Page Development}
+          {Engineered an intuitive covenant page with \textbf{Vue.js} and \textbf{Kotlin}, simplifying the terms and conditions signing process for over 59,000 small business loans, leading to a significant reduction in transaction costs.}
+		\resumeItem{RESTful APIs Development}
+          {Constructed and deployed RESTful APIs using \textbf{Kotlin} to query and process data from PostgreSQL databases for the frontend, as well as validated sensitive information, enhancing data security and reliability for over 100,000 users.}
+		\resumeItem{Quality Assurance}
+          {Leveraged \textbf{Jest} to devise comprehensive unit tests, ensuring $\geq$80\% code coverage across all components, which led to a 32\% reduction in user-reported bugs and enhanced overall product stability and user satisfaction.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% -----------PROJECTS-----------------
+ \section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{
+    	\ulhref{https://github.com/yokurang/stocks-playground}{yokurang/stocks-playground}
+    }
+    {Developed a real-time stock portfolio website using \textbf{Rust} and \textbf{CapitalIQ}, allowing users to monitor my portfolio and query market stocks based on valuation ratios.}
+    \resumeSubItem{
+    	\ulhref{https://github.com/yokurang/sg-university-course-rankings}{yokurang/sg-university-course-rankings}
+    }
+      {Designed a \textbf{Python}-powered website that ranks similar courses in Singapore based on employment outcomes and median salaries drawn from graduate surveys of local universities.}
+    \resumeSubItem{
+		\ulhref{https://github.com/yokurang/ocaml-t-lua}{yokurang/ocaml-t-lua}
+    }
+    {Built a transpiler from OCaml to Lua using \textbf{OCaml}, facilitating smoother language conversions and interoperability.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+	\textbf
+     {Languages}{: C/C++, Python, TypeScript, JavaScript, Golang, Scala, Kotlin, OCaml,
+     Rust, PHP, SQL}
+	\\
+	\textbf{Frameworks}{: React, Vue.js, Next.js, Spring Boot, Express.js, Flask, Laravel, Amazon Web Services }
+   }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
