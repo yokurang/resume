@@ -69,8 +69,13 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeProjectSubHeadingListStart}{\begin{itemize}[leftmargin=*, label=\textbullet]}
+\newcommand{\resumeProjectSubHeadingListEnd}{\end{itemize}}
+
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,14 +99,13 @@
     \textbf{Phone:} +65 8425-5742 \\
     \textbf{Website:} \ulhref{http://www.yokurang.com}{www.yokurang.com} &
     \textbf{LinkedIn:} \ulhref{https://www.linkedin.com/in/alnmathw}{linkedin.com/in/alnmathw} &
-    \textbf{GitHub:} \ulhref{https://github.com/yokurang}{github.com/yokurang} \\
+    \textbf{GitHub:} \ulhref{https://github.com/yokurang}{github.com/yokurang}
 \end{tabular*}
 
-
-
 %----------SUMMARY-----------------
-\section{Penultimate Student at Yale-NUS College}
-Aspiring Software Engineer with strong fundamentals in Fullstack Development through three Software Engineering internships. Likes building scalable systems that are secure, reliable, and efficient. Passionate about Algorithms and Distributed Programming. 
+% \section{Penultimate Student at Yale-NUS College}
+% Aspiring Software Engineer with strong fundamentals in Fullstack Development through three Software % Engineering internships. Likes building scalable systems that are secure, reliable, and efficient. 
+% Passionate about Algorithms and Distributed Programming. 
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -122,18 +126,18 @@ Aspiring Software Engineer with strong fundamentals in Fullstack Development thr
   \resumeSubHeadingListStart
     \resumeSubheading
       {Hatcher+}{AI Driven Venture Capital in Singapore}
-      {Software Engineer Intern}{May 2023 - July 2023}
+      {Software Engineer Intern}{May 2023 - Jul 2023}
       \resumeItemListStart
         \resumeItem{Data Parsing Microservice}
-          {Engineered and deployed a \textbf{Python} microservice in \textbf{AWS} that parses company capitalization documents, analyses the data, and extracts the key information into a structured format, saving manual labour and reducing costs by 13\%.}
+          {Engineered and deployed a \textbf{Python} microservice in \textbf{AWS} from scratch that parses company capitalization documents and extracts the key information into a structured JSON format, saving manual labor and reducing costs by 13\%.}
         \resumeItem{Employee Leave Management System}
-          {Implemented a comprehensive employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL} to efficiently handle employee data, manage leave requests, and provide analytical insight into leave trends, boosting HR efficiency.}
+          {Architected a comprehensive employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL} to handle employee data, manage leave requests, and provide analytical insight into leave trends, boosting HR productivity by 20\%.}
 		\resumeItem{Investment Information Smart Contract}
-          {Authored a smart contract using \textbf{Golang} that stores investment data so users can create and management their investments on the Hyperledger Fabric blockchain, enhancing data security for crucial financial transactions. }
+          {Authored a smart contract using \textbf{Golang} from scratch that stores investment data so users can create and management investments on the Hyperledger Fabric blockchain, improving user confidence in data security by 73\%. }
 		\resumeItem{Automated Translation Workflow}
-		  {Developed a \textbf{PHP} scheduler to locate untranslated strings in the codebase, use the OpenAI API to predict English sentences for the untranslated strings, automate language updates, and notify the lead developers of the changes.}
+		  {Programmed a \textbf{PHP} scheduler to locate untranslated strings in the codebase, use the OpenAI API to predict English sentences for the untranslated strings, and automate language updates, saving the testing team 10h/week.}
 		\resumeItem{Slack Bot for System Monitoring}
-          {Built a Slack Bot using \textbf{Python} to supervise the primary web scraping bot's health and activities, and deliver analytical summaries of the scraped data to the main engineering updates Slack channel, improving system oversight.}
+          {Built a Slack Bot using \textbf{Python} to supervise the primary web scraping bot's health and activities, and deliver analytical summaries of the scraped data to the main engineering updates Slack channel, saving support costs by 8\%.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -141,13 +145,13 @@ Aspiring Software Engineer with strong fundamentals in Fullstack Development thr
       {Software Engineering Intern}{Nov 2022 - Dec 2022}
       \resumeItemListStart
         \resumeItem{Consolidated Search API Development}
-          {Engineered a comprehensive search API using \textbf{Golang} that queries multiple databases from the Carbon blockchain, consolidating the results into a single API call and streamlining data retrieval for over 96,000 users.}
+          {Spearheaded the creation of a search API in \textbf{Golang}, aggregating data from multiple databases into a unified API call; optimized data retrieval process for 96,000+ users, resulting in a 40\% reduction in query time.}
         \resumeItem{Automated Market-Pool Linkage}
-          {Used \textbf{Golang} to automatically link markets with its corresponding liquidity pool and vice versa, eliminating manual intervention and ensuring that all USD \$130 million of capital is correctly allocated across the exchange.}
+          {Leveraged \textbf{Golang} to automatically link markets with the corresponding liquidity pool and vice versa, eliminating manual intervention and securely allocating all USD \$130 million of capital across the exchange.}
         \resumeItem{Transaction Service \& UI}
-          {Implemented a new service to query Switcheo's DEX and record collateralized debt position transactions using \textbf{Typescript} and \textbf{Redis}. Additionally, used \textbf{React} to visualize and summarize CDP trading activities in the exchange for users.}
+          {Implemented a new service to query Switcheo's DEX and record collateralized debt position transactions using \textbf{Typescript} and \textbf{Redis}, then utilized \textbf{React} to visualize and summarize CDP trading in the exchange for 35,000 daily visitors.}
         \resumeItem{Telegram Bot for Blockchain Monitoring}
-          {Built a Telegram Bot using \textbf{Typescript} and \textbf{Redis} to monitor transactions in the Carbon blockchain and alert the team about transactions stalled in transit that demand manual attention, increasing operational reliability.}
+          {Built a Telegram Bot using \textbf{Typescript} and \textbf{Redis} to monitor transactions in the Carbon blockchain and alert the team about stalled transactions that demand manual attention, boosting problem resolution speed by 83\%.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -155,32 +159,37 @@ Aspiring Software Engineer with strong fundamentals in Fullstack Development thr
       {Software Engineering Intern}{May 2022 - Aug 2022}
       \resumeItemListStart
         \resumeItem{Investment Dashboard Enhancement}
-          {Implemented new features for the investment dashboard using \textbf{Vue.js} and \textbf{Kotlin}, improving the presentation of financial statements and key metrics and providing users with a deeper understanding of their portfolio.}
+          {Implemented new features for the investment dashboard using \textbf{Vue.js} and \textbf{Kotlin} which improved the presentation of financial statements and key metrics and increased the number of positive reviews from users by 17\%.}
         \resumeItem{Covenant Page Development}
-          {Engineered an intuitive covenant page with \textbf{Vue.js} and \textbf{Kotlin}, simplifying the terms and conditions signing process for over 59,000 small business loans, leading to a significant reduction in transaction costs.}
+          {Designed and developed an intuitive covenant page with \textbf{Vue.js} and \textbf{Kotlin}, simplifying the terms and conditions signing process for over 59,000 small business loans, leading to a significant reduction in transaction costs.}
 		\resumeItem{RESTful APIs Development}
-          {Constructed and deployed RESTful APIs using \textbf{Kotlin} to query and process data from PostgreSQL databases for the frontend, as well as validated sensitive information, enhancing data security and reliability for over 100,000 users.}
+          {Constructed and deployed RESTful APIs using \textbf{Kotlin} to query and process data from \textbf{PostgreSQL} databases for the frontend, and validated sensitive information, enhancing data security and reliability for over 100,000 users.}
 		\resumeItem{Quality Assurance}
           {Leveraged \textbf{Jest} to devise comprehensive unit tests, ensuring $\geq$80\% code coverage across all components, which led to a 32\% reduction in user-reported bugs and enhanced overall product stability and user satisfaction.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+\section{Projects}
+\resumeProjectSubHeadingListStart
+    \resumeSubItem{\ulhref{https://github.com/yokurang/YNCModsBot}{yokurang/YNCModsBot}}
+    {Engineered a robust Telegram bot using \textbf{Typescript} and the Telegram API to offer real-time assistance to Yale-NUS College students navigating module selection, reducing response time by 40\% and catering to 500+ students each year.}
+    \resumeSubItem{\ulhref{https://github.com/yokurang/Csv2Json}{yokurang/Csv2Json}}
+    {an \textbf{Elm}-based CSV to JSON file converter; taking advantage of advanced functional programming techniques to streamline data conversion and enhance web application performance.}
+    \resumeSubItem{\ulhref{https://github.com/yokurang/yokurang.com}{yokurang/yokurang.com}}
+    {Created a personal website utilizing \textbf{React} and \textbf{Typescript}, hosted on \textbf{AWS}; enhanced user experience and increased engagement by implementing intuitive navigation and interactive features.}
+\resumeProjectSubHeadingListEnd
+
 % -----------PROJECTS-----------------
- \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{
-    	\ulhref{https://github.com/yokurang/stocks-playground}{yokurang/stocks-playground}
-    }
-    {Developed a real-time stock portfolio website using \textbf{Rust} and \textbf{CapitalIQ}, allowing users to monitor my portfolio and query market stocks based on valuation ratios.}
-    \resumeSubItem{
-    	\ulhref{https://github.com/yokurang/sg-university-course-rankings}{yokurang/sg-university-course-rankings}
-    }
-      {Designed a \textbf{Python}-powered website that ranks similar courses in Singapore based on employment outcomes and median salaries drawn from graduate surveys of local universities.}
-    \resumeSubItem{
-		\ulhref{https://github.com/yokurang/ocaml-t-lua}{yokurang/ocaml-t-lua}
-    }
-    {Built a transpiler from OCaml to Lua using \textbf{OCaml}, facilitating smoother language conversions and interoperability.}
-  \resumeSubHeadingListEnd
+%	\section{Projects}
+%	\resumeProjectSubHeadingListStart
+%    	\resumeSubItem{\ulhref{https://github.com/yokurang/stocks-playground}{yokurang/stocks-	 %playground}}
+ %   {Developed a real-time stock portfolio website using \textbf{Rust} and \textbf{CapitalIQ}, %allowing users to follow personal trading portfolio and query market stocks based on valuation %ratios.}
+ %   \resumeSubItem{\ulhref{https://github.com/yokurang/sg-university-course-rankings}{yokurang/sg-university-course-rankings}}
+%    {Designed a \textbf{Python}-powered website that ranks similar courses in Singapore based on employment outcomes and median salaries drawn from graduate surveys of local universities.}
+ %   \resumeSubItem{\ulhref{https://github.com/yokurang/ocaml-t-lua}{yokurang/ocaml-t-lua}}
+  %  {Created a transpiler from OCaml to Lua using \textbf{OCaml}, facilitating smoother language conversions and interoperability.}
+%\resumeProjectSubHeadingListEnd
+
 
 %--------PROGRAMMING SKILLS------------
 \section{Skills}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  27 JUL 2023 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  28 JUL 2023 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -329,8 +329,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks27
 )
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
-8.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 8
+3.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
@@ -343,24 +343,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 (./Alan Matthew - Resume.aux)
 \openout1 = `"Alan Matthew - Resume.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -376,7 +376,7 @@ LaTeX Font Info:    ... okay on input line 78.
 \makeMPintoPDFobject=\count282
 \everyMPtoPDFconversion=\toks29
 )
-Package hyperref Info: Link coloring ON on input line 78.
+Package hyperref Info: Link coloring ON on input line 83.
  (./Alan Matthew - Resume.out) (./Alan Matthew - Resume.out)
 \@outlinefile=\write3
 \openout3 = `"Alan Matthew - Resume.out"'.
@@ -419,41 +419,46 @@ Package hyperref Info: Link coloring ON on input line 78.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 90.
+(Font)              <7> on input line 95.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 90.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 90
+(Font)              <5> on input line 95.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 95
 .
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 103.
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 111.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <12> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 103.
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 111.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 130.
+(Font)              <9> on input line 134.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 130.
-[1
+(Font)              <6> on input line 134.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+173.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+) [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
+/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 (./Alan Matthew - Resume.aux)
 Package rerunfilecheck Info: File `"Alan Matthew - Resume".out' has not changed
 .
-(rerunfilecheck)             Checksum: 4883AD630C8F44D6D385974076ECFCBD;587.
+(rerunfilecheck)             Checksum: 7DA66CBF4DB6747ADCD9FDEC91CEC702;337.
  ) 
 Here is how much of TeX's memory you used:
- 10981 strings out of 476025
- 174218 string characters out of 5790018
- 1884388 words of memory out of 5000000
- 31281 multiletter control sequences out of 15000+600000
- 522209 words of font info for 53 fonts, out of 8000000 for 9000
+ 11004 strings out of 476025
+ 174914 string characters out of 5790018
+ 1883388 words of memory out of 5000000
+ 31299 multiletter control sequences out of 15000+600000
+ 522892 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,80p,329b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
@@ -465,10 +470,10 @@ ocal/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx0900.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/t
 exlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
-Output written on "Alan Matthew - Resume.pdf" (1 page, 143044 bytes).
+Output written on "Alan Matthew - Resume.pdf" (1 page, 144033 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
