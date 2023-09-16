@@ -2,8 +2,8 @@ PWD /Users/yokurang/Documents/Resume/SoftwareEngineering
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/yokurang/Documents/Resume/SoftwareEngineering/Alan Matthew - Resume.tex
-OUTPUT Alan Matthew - Resume.log
+INPUT /Users/yokurang/Documents/Resume/SoftwareEngineering/Resume_AlanMatthew.tex
+OUTPUT Resume_AlanMatthew.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -514,10 +514,10 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Alan Matthew - Resume.aux
-INPUT Alan Matthew - Resume.aux
-INPUT Alan Matthew - Resume.aux
-OUTPUT Alan Matthew - Resume.aux
+INPUT ./Resume_AlanMatthew.aux
+INPUT Resume_AlanMatthew.aux
+INPUT Resume_AlanMatthew.aux
+OUTPUT Resume_AlanMatthew.aux
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
@@ -545,18 +545,18 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
-INPUT ./Alan Matthew - Resume.out
-INPUT Alan Matthew - Resume.out
-INPUT ./Alan Matthew - Resume.out
-INPUT Alan Matthew - Resume.out
-INPUT ./Alan Matthew - Resume.out
-INPUT Alan Matthew - Resume.out
-INPUT ./Alan Matthew - Resume.out
-INPUT Alan Matthew - Resume.out
-INPUT ./Alan Matthew - Resume.out
-INPUT ./Alan Matthew - Resume.out
-OUTPUT Alan Matthew - Resume.out
-OUTPUT Alan Matthew - Resume.pdf
+INPUT ./Resume_AlanMatthew.out
+INPUT Resume_AlanMatthew.out
+INPUT ./Resume_AlanMatthew.out
+INPUT Resume_AlanMatthew.out
+INPUT ./Resume_AlanMatthew.out
+INPUT Resume_AlanMatthew.out
+INPUT ./Resume_AlanMatthew.out
+INPUT Resume_AlanMatthew.out
+INPUT ./Resume_AlanMatthew.out
+INPUT ./Resume_AlanMatthew.out
+OUTPUT Resume_AlanMatthew.out
+OUTPUT Resume_AlanMatthew.pdf
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -593,9 +593,9 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT Alan Matthew - Resume.aux
-INPUT ./Alan Matthew - Resume.out
-INPUT ./Alan Matthew - Resume.out
+INPUT Resume_AlanMatthew.aux
+INPUT ./Resume_AlanMatthew.out
+INPUT ./Resume_AlanMatthew.out
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb
