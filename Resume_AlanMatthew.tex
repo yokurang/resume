@@ -60,8 +60,8 @@
 % Header Settings %
 \def \fullname { Alan Matthew }
 
-\def \linkedinlink { https://www.linkedin.com/in/alnmathw }
-\def \linkedintext { linkedin.com/in/alnmathw }
+\def \linkedinlink { https://www.linkedin.com/in/yokurang }
+\def \linkedintext { linkedin.com/in/yokurang }
 
 \def \phonenumber { +65 8425 5742 }
 
@@ -97,25 +97,25 @@
 
 % Entry with Title, Subheading, Date, Location % 
 \newcommand{\ResumeEntryTSDL}[4]{
-  \vspace{-1pt}\item
+  \vspace{1pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r} 
       \textbf{#1} & #2 \\
       #3 & #4 \\
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}\vspace{-2.835pt} % Adjust this value
 }
 
 % Resume Item List %
 \renewcommand{\labelitemii}{$\bullet$}
 \newcommand{\ResumeItem}[2]{
   \item{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-2.835pt}}
   }
 }
 
-\newcommand{\ResumeSubItem}[2]{\ResumeItem{#1}{#2}\vspace{-4pt}}
-\newcommand{\ResumeEntryStart}{\begin{itemize}[leftmargin=2mm, label={}]}
-\newcommand{\ResumeEntryEnd}{\end{itemize}\vspace{-7pt}}
-\newcommand{\ResumeItemListStart}{\begin{itemize}[leftmargin=5mm, label=$\bullet$]}
+\newcommand{\ResumeSubItem}[2]{\ResumeItem{#1}{#2}\vspace{-2.835pt}}
+\newcommand{\ResumeEntryStart}{\begin{itemize}[leftmargin=0mm, label={}]}
+\newcommand{\ResumeEntryEnd}{\end{itemize}\vspace{-2.835pt}} % Adjust this value
+\newcommand{\ResumeItemListStart}{\begin{itemize}[leftmargin=5mm, label=$\bullet$, itemsep=1mm, parsep=1mm]} % Adjust itemsep and parsep values
 \newcommand{\ResumeItemListEnd}{\end{itemize}}
 \newcommand{\ProjectItemListStart}{\begin{itemize}[leftmargin=*, label=$\bullet$]}
 \newcommand{\ProjectItemListEnd}{\end{itemize}\vspace{\entryspacing}}
@@ -128,58 +128,69 @@
   \SectionHeading{Education}
   \ResumeEntryStart
     \ResumeEntryTSDL{Yale-NUS College} {Singapore}
-    {Bachelor of Science in Math and Computer Science; Minor in Economics; GPA: 4.80/5.00} {May 2025}
-    \ResumeSubItem{Awards}{Recipient of the Kewalram Chanrai Scholarship}
-    \ResumeSubItem{Relevant Coursework}{Databases, Distributed Computing, Functional Programming and Proving}
+    {Bachelor of Science in Math and Computer Science; Minor in Economics; GPA: 4.86/5.00} {May 2025}
+    \ResumeSubItem{Relevant Coursework}{Parallel Programming, Programming Language Design, Machine Learning}
     \ResumeSubItem{Professional Certification}{AWS Cloud Practitioner}
+    \ResumeSubItem{Awards}{Kewalram Chanrai Full Scholarship}
   \ResumeEntryEnd
 
   \vspace{5pt}
 
   \SectionHeading{Experience}
   \ResumeEntryStart
-    \ResumeEntryTSDL{Hatcher+}{AI Driven Venture Capital in Singapore}{Software Engineering Intern}{May 2023 - Aug 2023}
+    \ResumeEntryTSDL{Evooq}{Swiss Wealth and Asset Management SaaS}{Software Engineering Intern}{Jan 2024 - Apr 2024}
+    \ResumeItemListStart
+      \ResumeItem{GenAI Trading Tool}
+        {Built a \textbf{Python} application that uses large language models to generate trading strategies, simulate these strategies on historical data, and produce a report on the performance.}
+      \ResumeItem{Chatbot for Querying Data}
+        {Engineered a \textbf{Python}-based chatbot leveraging large language models to query data and generate charts from a \textbf{MariaDB} database through natural language prompts.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Hatcher+}{Singaporean Venture Capital SaaS}{Software Engineering Intern}{May 2023 - Aug 2023}
     \ResumeItemListStart
       \ResumeItem{Data Parsing Microservice}
-      {Engineered a \textbf{Python} microservice on \textbf{AWS} from scratch to parse excel company capitalization documents into a structured JSON file, reducing manual labor costs by 13\%.}
+        {Engineered a \textbf{Python} microservice from scratch to parse excel company capitalization documents into structured JSONs using a large language model, saving data entry time.}
 
       \ResumeItem{Employee Leave System}
-      {Independently built an employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL} to handle employee data and manage leave requests, boosting HR efficiency by 20\%.}
+        {Built an employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL} to handle employee data, manage leave requests, and display leave information on employee calendars.}
 
-      \ResumeItem{Investment Information Smart Contract}
-      {Authored a smart contract using \textbf{Golang} that stores investment data for investment management on the blockchain, increasing user growth by 8\%.}
+      \ResumeItem{Investment Data Smart Contract}
+        {Authored a smart contract in \textbf{Golang} to store investment information on the AWS Hyperledger Fabric blockchain network to facilitate reliable data storage.}
+        % {Authored a smart contract using \textbf{Golang} to store investment data for investment management on the AWS Hyperledger Fabric blockchain network.}
 
-      \ResumeItem{Automated Translation Workflow}
-      {Programmed a \textbf{PHP} scheduler to locate untranslated strings in the codebase, predict English sentences using OpenAI, and apply language updates, saving 10h/week.}
+      % \ResumeItem{Automated Translation Workflow}
+      % {Programmed a \textbf{PHP} scheduler to locate untranslated strings in the codebase, predict English sentences using OpenAI, and apply language updates, saving 10h/week.}
 
-      \ResumeItem{Slack Bot for System Monitoring}
-      {Developed a \textbf{Python} Slack Bot to monitor web scraping bot health, analyze scraped data, and report to engineering Slack channel, reducing support costs by 8\%.}
+      % \ResumeItem{Slack Bot for System Monitoring}
+      % {Developed a \textbf{Python} Slack Bot to monitor web scraping bot health, analyze scraped data, and report to engineering Slack channel, reducing support costs by 8\%.}
     \ResumeItemListEnd
   \ResumeEntryEnd
 
   \ResumeEntryStart
-    \ResumeEntryTSDL{Switcheo Labs}{Cryptocurrency Exchange in Singapore}{Software Engineering Intern}{Nov 2022 - Dec 2022}
+    \ResumeEntryTSDL{Switcheo Labs}{Singaporean Cryptocurrency Exchange}{Software Engineering Intern}{Oct 2022 - Dec 2022}
     \ResumeItemListStart
     \ResumeItem{Consolidated Search API}
-      {Architected a \textbf{Golang} API to aggregate data from multiple databases into a unified API call; optimized retrieval for 96,000+ users, cutting query time by 40\%.}
+      {Developed a \textbf{Golang} API to aggregate and consolidate data from multiple databases into a single, unified API call, simplifying the information search process for 96,000+ users.}
     \ResumeItem{Market-Pool Linkage}
-      {Leveraged \textbf{Golang} to auto-link markets and liquidity pools, eliminating manual work and and securely allocating all USD \$130+ million of capital across the exchange.}
+      {Used \textbf{Golang} to automatically link markets and liquidity pools, eliminating manual work and and securely allocating all USD \$130+ million of capital across the exchange.}
     \ResumeItem{Transaction Service \& UI}
-      {Implemented a \textbf{TypeScript} service with \textbf{Redis} to handle Switcheo's DEX debt transactions and visualize trading activities with \textbf{React}, serving 35,000 daily visitors.}
+      {Implemented a microservice in \textbf{TypeScript} to monitor and collect data on CDP transactions and visualize the trading activities using \textbf{React}, serving 35,000 daily visitors.}
     \ResumeItem{Telegram Bot for Blockchain Monitoring}
-      {Built a \textbf{TypeScript} Telegram Bot with \textbf{Redis} to alert the team about stalled Carbon blockchain transactions, increasing resolution speed by 83\%.}
+      {Built a Telegram Bot using \textbf{TypeScript} and \textbf{Redis} to alert the team about stalled Carbon blockchain transactions, increasing the resolution speed by 83\%.}
     \ResumeItemListEnd
   \ResumeEntryEnd
 
   \ResumeEntryStart
-    \ResumeEntryTSDL{Investree}{P2P Fintech Lending in Jakarta}{Software Engineering Intern}{May 2022 - Aug 2022}
+    \ResumeEntryTSDL{Investree}{Jakarta P2P Fintech Lending}{Software Engineering Intern}{May 2022 - Aug 2022}
     \ResumeItemListStart
       \ResumeItem{Investment Dashboard Enhancement}
-      {Implemented new features with \textbf{Vue.js} and \textbf{Kotlin}, improving presentation of financial statements and key metrics, boosting user reviews by 17\%}.
+      {Implemented new features using \textbf{Vue.js} and \textbf{Kotlin} to improve the presentation of financial statements and key metrics, boosting user reviews by 17\%.}
       \ResumeItem{Covenant Page Development}
-        {Designed and developed a covenant page from scratch using \textbf{Vue.js} and \textbf{Kotlin}, simplifying the contractual agreement process for over 59,000 small business loans.}
-      \ResumeItem{RESTful APIs Development}
-        {Constructed and deployed RESTful APIs using \textbf{Kotlin} to query, process, and validate data from \textbf{PostgreSQL} databases for the frontend for over 100,000 users.}
+        {Designed and developed a covenant page from scratch using \textbf{Vue.js} and \textbf{Kotlin}, simplifying the contractual agreement process for over 59,000 business loans.}
+      \ResumeItem{RESTful API Development}
+        {Developed and deployed RESTful APIs in \textbf{Kotlin} for data querying, processing, and validation from \textbf{Postgres} databases, serving the frontend needs of over 100,000 users.}
     \ResumeItemListEnd
   \ResumeEntryEnd
 
@@ -195,8 +206,7 @@
 
   \SectionHeading{Skills}
   \ResumeEntryStart
-    \ResumeItem{Languages}{C++, Python, TypeScript, JavaScript, Golang, Scala, Kotlin, OCaml, PHP, SQL, tCPA}
-    \ResumeItem{Frameworks}{React, Vue.js, Next.js, Express.js, Flask, Laravel, AWS (Lambda, DynamoDB)}
+    \ResumeItem{Languages}{ C++, Python, TypeScript, JavaScript, OCaml, Golang, Scala, Kotlin, PHP, SQL, tCPA }
+    \ResumeItem{Frameworks}{ React, Vue.js, Next.js, Express.js, Flask, Laravel, AWS (Lambda, DynamoDB) }
   \ResumeEntryEnd
-
 \end{document}
