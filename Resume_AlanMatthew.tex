@@ -30,7 +30,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=black,   
-    urlcolor=blue,
+    urlcolor=black,
 }
 
 % Customizations
@@ -83,7 +83,6 @@
 
 \def \entryspacing {-0pt}
 
-
 \def \linkedin {\href{\linkedinlink}{\linkedintext}}
 \def \phone {{\phonenumber}}
 \def \email {\href{\emaillink}{\emailtext}}
@@ -115,6 +114,18 @@
   }
 }
 
+\newcommand{\ResumeItemDefault}[1]{
+  \item{
+    #1 \vspace{-2.835pt}
+  }
+}
+
+\newcommand{\ResumeProjectItem}[3]{
+  \item{
+    \href{#2}{\textbf{#1}}{: #3 \vspace{-2.835pt}}
+  }
+}
+
 \newcommand{\ResumeSubItem}[2]{\ResumeItem{#1}{#2}\vspace{-2.835pt}}
 \newcommand{\ResumeEntryStart}{\begin{itemize}[leftmargin=0mm, label={}]}
 \newcommand{\ResumeEntryEnd}{\end{itemize}\vspace{-2.835pt}} % Adjust this value
@@ -122,6 +133,13 @@
 \newcommand{\ResumeItemListEnd}{\end{itemize}}
 \newcommand{\ProjectItemListStart}{\begin{itemize}[leftmargin=*, label=$\bullet$]}
 \newcommand{\ProjectItemListEnd}{\end{itemize}\vspace{\entryspacing}}
+
+\newcommand{\OpenSourceProjectItem}[3]{
+  \item{
+    \href{#1}{\textbf{#2} }\hfill{#3}\vspace{-2.835pt}
+  }
+}
+
 
 % Document %
 
@@ -133,10 +151,10 @@
     \ResumeEntryTSDL{Yale-NUS College} {Singapore}
     {Bachelor of Science in Math and Computer Science; Minor in Economics; GPA: 4.86/5.00} {May 2025}
     \ResumeSubItem{Relevant Coursework}{Parallel Programming, Programming Language Design, Machine Learning}
-    % \ResumeSubItem{Activities}{Teaching Assistant for Data Structures \& Algorithms, Probability, and Database Systems}
+    \ResumeSubItem{Activities}{Teaching Assistant for Data Structures \& Algorithms, Probability, and Database Systems}
     % \ResumeSubItem{Professional Certification}{AWS Cloud Practitioner}
     \ResumeSubItem{Awards}{Kewalram Chanrai Full Scholarship}
-    \ResumeSubItem{Objective}{Seeking a full time Software Engineering Summer Internship from May 2024 to August 2024.}
+    % \ResumeSubItem{Objective}{Seeking a full time Software Engineering Summer Internship from May 2024 to August 2024.}
   \ResumeEntryEnd
 
   \vspace{5pt}
@@ -145,29 +163,32 @@
   \ResumeEntryStart
     \ResumeEntryTSDL{Evooq}{Swiss Wealth and Asset Management SaaS}{Software Engineering Intern}{Jan 2024 - Apr 2024}
     \ResumeItemListStart
-      \ResumeItem{GenAI Trading Tool}
-        {Built a \textbf{Python} application that uses large language models to generate trading strategies, simulate these strategies on historical data, and produce a report on the performance.}
-      \ResumeItem{Chatbot for Querying Data}
-        {Engineered a \textbf{Python}-based chatbot leveraging large language models for querying data and generating charts from a \textbf{MariaDB} database through natural language prompts.}
+    \ResumeItemDefault{Used \textbf{Python} to build a LLM chatbot which can query a \textbf{MariaDB} database using natural language.}
+    \ResumeItemDefault{Created a \textbf{Python} tool to generate trading ideas for a given portfolio with specific goals using RAG.}
+    \ResumeItemDefault{Developed a \textbf{Python} LLM application to automate FAQ responses and streamline proposal tendering.}
+    % \ResumeItem{GenAI Trading Tool} {Developed a trading idea generator for portfolios aligned with investment objectives}
+        % {Built a \textbf{Python} application that uses large language models to generate trading strategies, simulate these strategies on historical data, and produce a report on the performance.}
+      % \ResumeItem{Chatbot for Querying Data}
+      %   {Engineered a \textbf{Python}-based chatbot leveraging large language models for querying data and generating charts from a \textbf{MariaDB} database through natural language prompts.}
     \ResumeItemListEnd
   \ResumeEntryEnd
 
   \ResumeEntryStart
     \ResumeEntryTSDL{Hatcher+}{Singaporean Venture Capital SaaS}{Software Engineering Intern}{May 2023 - Aug 2023}
     \ResumeItemListStart
-      \ResumeItem{Data Parsing Microservice}
-        {Engineered a \textbf{Python} microservice from scratch to parse excel company capitalization documents into structured JSONs using a large language model, saving data entry time.}
-
-      \ResumeItem{Employee Leave System}
-        {Built an employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL} to handle employee data, manage leave requests, and display leave information on employee calendars.}
-
-      \ResumeItem{Investment Data Smart Contract}
-        {Authored a smart contract in \textbf{Golang} to store investment information on the AWS Hyperledger Fabric blockchain network to facilitate reliable data storage.}
-        % {Authored a smart contract using \textbf{Golang} to store investment data for investment management on the AWS Hyperledger Fabric blockchain network.}
-
+      \ResumeItemDefault{Built a \textbf{Python} LLM service to parse excel company capitalization documents into structured JSONs.}
+      \ResumeItemDefault{Authored a smart contract in \textbf{Golang} to store investment data on the AWS Hyperledger Fabric network.}
+      \ResumeItemDefault{Programmed a \textbf{PHP} scheduler to predict English sentences using an LLM and apply language updates.}
+      \ResumeItemDefault{Designed and developed a comprehensive employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL}.}
+      % \ResumeItem{Data Parsing Microservice}
+      %   {Engineered a \textbf{Python} microservice from scratch to parse excel company capitalization documents into structured JSONs using a large language model, saving data entry time.}
+      % \ResumeItemDefault{Created a \textbf{Python} Slack Bot to monitor the health and uptime of web scraping bots and update the Slack channel.}
+      % \ResumeItem{Employee Leave System}
+      %   {Built an employee leave system using \textbf{Vue.js}, \textbf{Laravel}, and \textbf{MySQL} to handle employee data, manage leave requests, and display leave information on employee calendars.}
+      % \ResumeItem{Investment Data Smart Contract}
+      %   {Authored a smart contract in \textbf{Golang} to store investment information on the AWS Hyperledger Fabric blockchain network to facilitate reliable data storage.}
       % \ResumeItem{Automated Translation Workflow}
       % {Programmed a \textbf{PHP} scheduler to locate untranslated strings in the codebase, predict English sentences using OpenAI, and apply language updates, saving 10h/week.}
-
       % \ResumeItem{Slack Bot for System Monitoring}
       % {Developed a \textbf{Python} Slack Bot to monitor web scraping bot health, analyze scraped data, and report to engineering Slack channel, reducing support costs by 8\%.}
     \ResumeItemListEnd
@@ -176,42 +197,62 @@
   \ResumeEntryStart
     \ResumeEntryTSDL{Switcheo Labs}{Singaporean Cryptocurrency Exchange}{Software Engineering Intern}{Oct 2022 - Dec 2022}
     \ResumeItemListStart
-    \ResumeItem{Consolidated Search API}
-      {Created a \textbf{Golang} API to aggregate and consolidate data from multiple databases into a single, unified API call, simplifying the information search process for 96,000+ users.}
-    \ResumeItem{Market-Pool Linkage}
-      {Leveraged \textbf{Golang} to automatically link markets and liquidity pools, eliminating manual work and securely allocating USD \$130+ million of capital across the exchange.}
-    \ResumeItem{Transaction Service \& UI}
-      {Implemented a microservice in \textbf{TypeScript} to monitor and collect data on CDP transactions and visualize the trading activities using \textbf{React}, serving 35,000 daily visitors.}
-    \ResumeItem{Telegram Bot for Blockchain Monitoring}
-      {Created a Telegram Bot using \textbf{TypeScript} and \textbf{Redis} to alert the team about stalled Carbon blockchain transactions, increasing the resolution speed by 83\%.}
+    \ResumeItemDefault{Used \textbf{Golang} to automatically link markets and liquidity pools for secure allocation of all capital.}
+    \ResumeItemDefault{Created a \textbf{Golang} search API to aggregate and consolidate data from multiple databases into one call.}
+    \ResumeItemDefault{Developed a \textbf{TypeScript} service for monitoring CDP transactions and visualizing trades with \textbf{React}.}
+    \ResumeItemDefault{Built a \textbf{TypeScript} Telegram Bot to alert the team about stalled Carbon blockchain transactions.}
+    % \ResumeItem{Market-Pool Linkage}
+    %   {Leveraged \textbf{Golang} to automatically link markets and liquidity pools, eliminating manual work and securely allocating USD \$130+ million of capital across the exchange.}
+    % \ResumeItem{Transaction Service \& UI}
+    %   {Implemented a microservice in \textbf{TypeScript} to monitor and collect data on CDP transactions and visualize the trading activities using \textbf{React}, serving 35,000 daily visitors.}
+    % \ResumeItem{Consolidated Search API}
+    %   {Created a \textbf{Golang} API to aggregate and consolidate data from multiple databases into a single, unified API call, simplifying the information search process for 96,000+ users.}
+    % \ResumeItem{Telegram Bot for Blockchain Monitoring}
+    %   {Created a Telegram Bot using \textbf{TypeScript} and \textbf{Redis} to alert the team about stalled Carbon blockchain transactions, increasing the resolution speed by 83\%.}
     \ResumeItemListEnd
   \ResumeEntryEnd
 
   \ResumeEntryStart
     \ResumeEntryTSDL{Investree}{Jakarta P2P Fintech Lending}{Software Engineering Intern}{May 2022 - Aug 2022}
     \ResumeItemListStart
-      \ResumeItem{Investment Dashboard Enhancement}
-      {Implemented new features using \textbf{Vue.js} and \textbf{Kotlin} to improve the presentation of financial statements and key metrics, boosting user reviews by 17\%.}
-      \ResumeItem{Covenant Page Development}
-        {Designed and developed a covenant page from scratch using \textbf{Vue.js} and \textbf{Kotlin}, simplifying the contractual agreement process for over 59,000 business loans.}
-      \ResumeItem{RESTful API Development}
-        {Developed and deployed RESTful APIs in \textbf{Kotlin} for data querying, processing, and validation from \textbf{Postgres} databases, serving the frontend needs of over 100,000 users.}
+      \ResumeItemDefault{Implemented new features using \textbf{Vue.js} and \textbf{Kotlin} to improve the presentation of portfolio finances.}
+      \ResumeItemDefault{Crafted a covenant page with \textbf{Vue.js} and \textbf{Kotlin}, streamlining contracts for 59,000+ business loans.}
+      \ResumeItemDefault{Built RESTful APIs in \textbf{Kotlin} for querying, processing, and validating data from \textbf{Postgres} databases.}
+      % \ResumeItem{Investment Dashboard Enhancement}
+      % {Implemented new features using \textbf{Vue.js} and \textbf{Kotlin} to improve the presentation of financial statements and key metrics, boosting user reviews by 17\%.}
+      % \ResumeItem{Covenant Page Development}
+      %   {Designed and developed a covenant page from scratch using \textbf{Vue.js} and \textbf{Kotlin}, simplifying the contractual agreement process for over 59,000 business loans.}
+      % \ResumeItem{RESTful API Development}
+      %   {Developed and deployed RESTful APIs in \textbf{Kotlin} for data querying, processing, and validation from \textbf{Postgres} databases, serving the frontend needs of over 100,000 users.}
     \ResumeItemListEnd
   \ResumeEntryEnd
 
-  % \SectionHeading{Projects}
-  % \ProjectItemListStart
-  %   \ResumeSubItem{yokurang/YNCModsBot}
-  %   {Engineered a Telegram bot using \textbf{TypeScript} and the Telegram API to offer real-time help to 250+ students navigating module selection, reducing response time by 40\%.}
-  %   \ResumeSubItem{yokurang/Csv2Json}
-  %   {an \textbf{Elm}-based CSV to JSON file converter that quickly converts CSV files to JSON without the need for a server.}
-  %   \ResumeSubItem{yokurang/yokurang.com}
-  %   {Created a personal website utilizing \textbf{React} and \textbf{TypeScript}, hosted on \textbf{AWS} that showcases my resume, projects, and blog posts.}
-  % \ProjectItemListEnd
+  \SectionHeading{Open Source}
+  \ResumeEntryStart
+    \OpenSourceProjectItem{https://github.com/panglesd/diffcessible}{panglesd/diffcessible}{Accessible Diff Viewer}
+    \ResumeItemListStart
+        \ResumeItemDefault{Implemented a Zipper data structure in \textbf{OCaml} for faster navigation and viewing of very large diff files.}
+        \ResumeItemDefault{Developed a side-by-side diff view feature in \textbf{OCaml}, enabling users to switch views with a keystroke.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \SectionHeading{Projects}
+  \ProjectItemListStart
+    \ResumeProjectItem{yokurang/quant-strategy-research}
+    {https://github.com/yokurang/quant-strategy-research}
+    {Researched the performance and patterns of a trading strategy.}
+    % \ResumeProjectItem{yokurang/ocaml-chat}
+    % {https://github.com/yokurang/ocaml-chat}
+    % {An \textbf{OCaml} one-to-one chat app using TCP for real-time messaging and RTT.}
+    \ResumeProjectItem{yokurang/passphrase-generator}
+    {https://github.com/yokurang/passphrase-generator}
+    {A \textbf{Rust} app to generate secure passphrases using Markov chains.}
+
+  \ProjectItemListEnd
 
   \SectionHeading{Skills}
   \ResumeEntryStart
-    \ResumeItem{Languages}{ C++, Python, TypeScript, JavaScript, OCaml, Golang, Scala, Kotlin, PHP, SQL, tCPA }
+    \ResumeItem{Languages}{ C++, Python, TypeScript, JavaScript, SQL, Kotlin, Scala, Golang, Rust, OCaml, Coq }
     \ResumeItem{Frameworks}{ React, Vue.js, Next.js, Express.js, Flask, Laravel, AWS (Lambda, DynamoDB) }
   \ResumeEntryEnd
 \end{document}
