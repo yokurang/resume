@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  30 JUL 2024 00:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  9 AUG 2024 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -354,16 +354,16 @@ Package rerunfilecheck Info: File `Resume_AlanMatthew.out' has not changed.
 Here is how much of TeX's memory you used:
  10060 strings out of 476025
  159684 string characters out of 5790018
- 1876388 words of memory out of 5000000
+ 1877388 words of memory out of 5000000
  30382 multiletter control sequences out of 15000+600000
  542986 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,9n,67p,1260b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Resume_AlanMatthew.pdf (1 page, 102235 bytes).
+Output written on Resume_AlanMatthew.pdf (1 page, 102167 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
