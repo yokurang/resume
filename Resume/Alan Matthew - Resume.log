@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  11 SEP 2024 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  17 JAN 2025 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yokurang/Documents/Resume/SoftwareEngineering/Resume_AlanMatthew.tex
-(/Users/yokurang/Documents/Resume/SoftwareEngineering/Resume_AlanMatthew.tex
+**"/Users/yokurang/Documents/Resume/SoftwareEngineering/Resume/Alan Matthew - Resume.tex"
+(/Users/yokurang/Documents/Resume/SoftwareEngineering/Resume/Alan Matthew - Resume.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -259,8 +259,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box55
-) (./Resume_AlanMatthew.aux)
-\openout1 = `Resume_AlanMatthew.aux'.
+) (./Alan Matthew - Resume.aux)
+\openout1 = `"Alan Matthew - Resume.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
 LaTeX Font Info:    ... okay on input line 146.
@@ -303,9 +303,9 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \everyMPtoPDFconversion=\toks26
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 146.
- (./Resume_AlanMatthew.out) (./Resume_AlanMatthew.out)
+ (./Alan Matthew - Resume.out) (./Alan Matthew - Resume.out)
 \@outlinefile=\write3
-\openout3 = `Resume_AlanMatthew.out'.
+\openout3 = `"Alan Matthew - Resume.out"'.
 
 
 *geometry* driver: auto-detecting
@@ -347,20 +347,20 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 152.
  [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./Resume_AlanMatthew.aux)
-Package rerunfilecheck Info: File `Resume_AlanMatthew.out' has not changed.
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./Alan Matthew - Resume.aux)
+Package rerunfilecheck Info: File `"Alan Matthew - Resume".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10060 strings out of 476025
- 159684 string characters out of 5790018
+ 10062 strings out of 476025
+ 159836 string characters out of 5790018
  1877388 words of memory out of 5000000
- 30382 multiletter control sequences out of 15000+600000
+ 30384 multiletter control sequences out of 15000+600000
  542986 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,9n,67p,1260b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,9n,67p,1272b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Resume_AlanMatthew.pdf (1 page, 102217 bytes).
+Output written on "Alan Matthew - Resume.pdf" (1 page, 102240 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
