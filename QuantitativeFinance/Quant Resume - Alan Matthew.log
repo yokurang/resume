@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.23)  28 MAY 2025 01:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.23)  28 MAY 2025 03:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/yokurang/Documents/Resumes/resume/SoftwareEngineering/Resume - Alan Matthew.tex"
-(/Users/yokurang/Documents/Resumes/resume/SoftwareEngineering/Resume - Alan Matthew.tex
+**"/Users/yokurang/Documents/Resumes/resume/QuantitativeFinance/Quant Resume - Alan Matthew.tex"
+(/Users/yokurang/Documents/Resumes/resume/QuantitativeFinance/Quant Resume - Alan Matthew.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -262,8 +262,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count288
 \l__pdf_internal_box=\box56
-) (./Resume - Alan Matthew.aux)
-\openout1 = `"Resume - Alan Matthew.aux"'.
+) (./Quant Resume - Alan Matthew.aux)
+\openout1 = `"Quant Resume - Alan Matthew.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
 LaTeX Font Info:    ... okay on input line 146.
@@ -306,9 +306,9 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \everyMPtoPDFconversion=\toks28
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 146.
- (./Resume - Alan Matthew.out) (./Resume - Alan Matthew.out)
+ (./Quant Resume - Alan Matthew.out) (./Quant Resume - Alan Matthew.out)
 \@outlinefile=\write3
-\openout3 = `"Resume - Alan Matthew.out"'.
+\openout3 = `"Quant Resume - Alan Matthew.out"'.
 
 
 *geometry* driver: auto-detecting
@@ -349,27 +349,27 @@ Package hyperref Info: Link coloring ON on input line 146.
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./Resume - Alan Matthew.aux)
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./Quant Resume - Alan Matthew.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `"Resume - Alan Matthew".out' has not changed.
+Package rerunfilecheck Info: File `"Quant Resume - Alan Matthew".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  10203 strings out of 473190
- 160291 string characters out of 5715800
- 586456 words of memory out of 5000000
+ 160417 string characters out of 5715800
+ 585486 words of memory out of 5000000
  33334 multiletter control sequences out of 15000+600000
  585924 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,9n,79p,1273b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,9n,79p,1279b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on "Resume - Alan Matthew.pdf" (1 page, 114827 bytes).
+Output written on "Quant Resume - Alan Matthew.pdf" (1 page, 113460 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

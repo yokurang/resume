@@ -2,8 +2,8 @@ PWD /Users/yokurang/Documents/Resumes/resume/QuantitativeFinance
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/yokurang/Documents/Resumes/resume/QuantitativeFinance/Resume - Alan Matthew.tex
-OUTPUT Resume - Alan Matthew.log
+INPUT /Users/yokurang/Documents/Resumes/resume/QuantitativeFinance/Quant Resume - Alan Matthew.tex
+OUTPUT Quant Resume - Alan Matthew.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo
@@ -107,10 +107,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Resume - Alan Matthew.aux
-INPUT ./Resume - Alan Matthew.aux
-INPUT Resume - Alan Matthew.aux
-OUTPUT Resume - Alan Matthew.aux
+INPUT ./Quant Resume - Alan Matthew.aux
+INPUT ./Quant Resume - Alan Matthew.aux
+INPUT Quant Resume - Alan Matthew.aux
+OUTPUT Quant Resume - Alan Matthew.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -124,14 +124,14 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
-INPUT ./Resume - Alan Matthew.out
-INPUT ./Resume - Alan Matthew.out
-INPUT Resume - Alan Matthew.out
-INPUT Resume - Alan Matthew.out
-INPUT ./Resume - Alan Matthew.out
-INPUT ./Resume - Alan Matthew.out
-OUTPUT Resume - Alan Matthew.out
-OUTPUT Resume - Alan Matthew.pdf
+INPUT ./Quant Resume - Alan Matthew.out
+INPUT ./Quant Resume - Alan Matthew.out
+INPUT Quant Resume - Alan Matthew.out
+INPUT Quant Resume - Alan Matthew.out
+INPUT ./Quant Resume - Alan Matthew.out
+INPUT ./Quant Resume - Alan Matthew.out
+OUTPUT Quant Resume - Alan Matthew.out
+OUTPUT Quant Resume - Alan Matthew.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -161,9 +161,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT Resume - Alan Matthew.aux
-INPUT ./Resume - Alan Matthew.out
-INPUT ./Resume - Alan Matthew.out
+INPUT Quant Resume - Alan Matthew.aux
+INPUT ./Quant Resume - Alan Matthew.out
+INPUT ./Quant Resume - Alan Matthew.out
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb
