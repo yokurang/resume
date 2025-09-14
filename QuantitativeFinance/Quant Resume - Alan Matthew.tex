@@ -162,7 +162,7 @@
   \ResumeItemDefault{Developed and maintained ETL pipelines, automating post-trade and transaction cost analysis (TCA) across high-frequency trading algorithms, delivering insights on hedge timing, execution quality, and price markouts.}
   \ResumeItemDefault{Designed and implemented robust NAV-based PnL attribution frameworks, producing granular breakdowns of performance by hedge leg, execution venue, etc., enabling comprehensive session-level reviews of trading activity.}
   \ResumeItemDefault{Built custom PnL monitoring and reporting pipelines for OTC trading to surface risks of strategy arbitrage, hedge inefficiency, and counterparty exposure, providing actionable insights to strengthen risk management.}
-  
+
   \ResumeItemListEnd
   \ResumeEntryEnd
 
@@ -215,16 +215,19 @@
 
   \SectionHeading{Projects}
   \ProjectItemListStart
-  \ResumeProjectItem{POE2 Arbitrage Scanner}
+  \ResumeProjectItem{yokurang/poe2-arbitrage}
   {https://github.com/yokurang/path-of-elixe}
-  {Engineered a scalable ETL and ML pipeline to scrape item prices/attributes and estimate FX rates via VWAP. Built both regularized regression and closed-form pricing models, selecting the best per item, and applied residual diagnostics in an iterative feedback loop to refine accuracy. Implemented a live client to continuously scan and detect undervalued items across multiple quote currencies in real time.}
-  \ResumeProjectItem{Strategy Behaviour Analysis}
+  {Engineered a scalable ETL and ML pipeline to scrape item prices/attributes and estimate FX rates via VWAP. Built both regularized regression and closed-form pricing models, selecting the best per item, and applied residual diagnostics in an iterative feedback loop to refine accuracy. Implemented a live client to continuously scan and detect undervalued items across multiple quote currencies in real time to users.}
+
+  \ResumeProjectItem{yokurang/strategy-behaviour-analysis}
   {https://github.com/yokurang/trading-strategy-behavior-analysis}
   {Investigated trade direction predictability using classification models.
   Engineered features and systematically trained and applied different models to understand trading behavior.}
-  \ResumeProjectItem{Strategy Markout Analysis}
+
+  \ResumeProjectItem{yokurang/strategy-markout-analysis}
   {https://github.com/yokurang/trading-strategy-markout-analysis}
   {Performed post-trade analysis on crypto data by identifying key one-hour windows, computing markouts, and visualizing strategy behaviour, trade profiles, and drawdowns.}
+
   \ResumeProjectItem{yokurang/mytree}
   {https://github.com/yokurang/mytree}
   {A published Rust tool for displaying directory trees with custom filters. 2k+ downloads.}
@@ -233,7 +236,6 @@
   \SectionHeading{Skills}
   \ResumeEntryStart
     \ResumeItem{Languages}{ Python, Rust, C++, OCaml, C\#, TypeScript, JavaScript, SQL, Kotlin, Scala, Golang, Coq }
-    \ResumeItem{Frameworks}{ React, Vue.js, Next.js, Express.js, Flask, Laravel, AWS (Lambda, DynamoDB) }
-    \ResumeItem{Machine Learning / Data}{ PyTorch, TensorFlow, scikit-learn, XGBoost, Pandas, NumPy, Spark, Kubernetes }
+    \ResumeItem{Frameworks}{ React, Next.js, Flask, PyTorch, TensorFlow, scikit-learn, AWS (Lambda, DynamoDB) }
   \ResumeEntryEnd
 \end{document}
