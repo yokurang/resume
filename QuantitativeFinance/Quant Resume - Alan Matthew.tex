@@ -157,32 +157,34 @@
   \SectionHeading{Experience}
 
   \ResumeEntryStart
-  \ResumeEntryTSDL{Caladan}{HFT Market Maker}{Algorithm Developer}{Jul 2025 – Present}
+  \ResumeEntryTSDL{Caladan}{HFT Market Making}{Algorithm Developer}{Jul 2025 – Present}
   \ResumeItemListStart
-  \ResumeItemDefault{Automated daily post-trade analysis and transaction cost analysis for various trading algorithms, providing insights on hedge timing, execution quality, markout analysis, pricing, and other relevant statistics.}
-  % \ResumeItemDefault{Collaborate with quantitative researchers and traders to uncover, backtest, and deploy new signals to improve overall execution quality, reducing slippage, improving fill rates, and minimizing overall execution costs.}
-  \ResumeItemDefault{Built custom reporting pipelines to analyze and monitor algorithmic trading PnL, surfacing the risk of our strategy being arbitraged and assessing potential hedge ineffectiveness, alongside other key performance metrics.}
+  \ResumeItemDefault{Developed and maintained ETL pipelines, automating post-trade and transaction cost analysis (TCA) across high-frequency trading algorithms, delivering insights on hedge timing, execution quality, and price markouts.}
+  \ResumeItemDefault{Designed and implemented robust NAV-based PnL attribution frameworks, producing granular breakdowns of performance by hedge leg, execution venue, etc., enabling comprehensive session-level reviews of trading activity.}
+  \ResumeItemDefault{Built custom PnL monitoring and reporting pipelines for OTC trading to surface risks of strategy arbitrage, hedge inefficiency, and counterparty exposure, providing actionable insights to strengthen risk management.}
+  
   \ResumeItemListEnd
   \ResumeEntryEnd
 
   \ResumeEntryStart
-  \ResumeEntryTSDL{Caladan}{HFT Market Maker}{Algorithm Developer Intern}{May 2024 - Aug 2024}
+  \ResumeEntryTSDL{Caladan}{HFT Market Making}{Algorithm Developer Intern}{May 2024 - Aug 2024}
   \ResumeItemListStart
   \ResumeItemDefault{Engineered low-latency trading execution servers and market quote polling services for new exchanges.}
+  \ResumeItemDefault{Monitored trading algorithms and adjusted trading execution parameters depending on market conditions.}
   \ResumeItemDefault{Monitored and resolved production issues in core trading algorithms, ensuring correct trading behavior.}
   \ResumeItemDefault{Expanded Python analysis libraries for deeper insights into market volume, PnL, and trading statistics.}
   \ResumeItemDefault{Built ETL visibility tools and debugged out of memory issues in Python, reducing AWS costs by 80\%.}
   \ResumeItemListEnd
   \ResumeEntryEnd
 
-  \ResumeEntryStart
-    \ResumeEntryTSDL{Switcheo Labs}{Cryptocurrency Exchange}{Software Engineering Intern}{Oct 2022 - Dec 2022}
-    \ResumeItemListStart
-    \ResumeItemDefault{Automated market and liquidity pool allocation logic in Golang for DeFi trading across 90+ markets.}
-    \ResumeItemDefault{Developed a TypeScript service for monitoring debt transactions and visualizing trades using React.}
-    \ResumeItemDefault{Developed a Telegram bot to monitor and alert support of stalled Carbon blockchain trades.}
-    \ResumeItemListEnd
-  \ResumeEntryEnd
+  % \ResumeEntryStart
+  %   \ResumeEntryTSDL{Switcheo Labs}{Cryptocurrency Exchange}{Software Engineering Intern}{Oct 2022 - Dec 2022}
+  %   \ResumeItemListStart
+  %   \ResumeItemDefault{Automated market and liquidity pool allocation logic in Golang for DeFi trading across 90+ markets.}
+  %   \ResumeItemDefault{Developed a TypeScript service for monitoring debt transactions and visualizing trades using React.}
+  %   % \ResumeItemDefault{Developed a Telegram bot to monitor and alert support of stalled Carbon blockchain trades.}
+  %   \ResumeItemListEnd
+  % \ResumeEntryEnd
 
   % \SectionHeading{Open Source}
   % \ResumeEntryStart
@@ -213,26 +215,25 @@
 
   \SectionHeading{Projects}
   \ProjectItemListStart
-  \ResumeProjectItem{yokurang/mytree}
-  {https://github.com/yokurang/mytree}
-  {A published \textbf{Rust} tool for displaying directory trees with custom filters. 2k+ downloads.}
+  \ResumeProjectItem{POE2 Arbitrage Scanner}
+  {https://github.com/yokurang/path-of-elixe}
+  {Engineered a scalable ETL and ML pipeline to scrape item prices/attributes and estimate FX rates via VWAP. Built both regularized regression and closed-form pricing models, selecting the best per item, and applied residual diagnostics in an iterative feedback loop to refine accuracy. Implemented a live client to continuously scan and detect undervalued items across multiple quote currencies in real time.}
   \ResumeProjectItem{Strategy Behaviour Analysis}
   {https://github.com/yokurang/trading-strategy-behavior-analysis}
   {Investigated trade direction predictability using classification models.
   Engineered features and systematically trained and applied different models to understand trading behavior.}
-
-  \ResumeProjectItem{Market Impact Analysis}
-  {https://github.com/yokurang/trading-strategy-behavior-analysis}
-  {Designed custom metrics and applied permutation-based hypothesis testing to evaluate the market impact of a live trading strategy.}
-
   \ResumeProjectItem{Strategy Markout Analysis}
   {https://github.com/yokurang/trading-strategy-markout-analysis}
   {Performed post-trade analysis on crypto data by identifying key one-hour windows, computing markouts, and visualizing strategy behaviour, trade profiles, and drawdowns.}
+  \ResumeProjectItem{yokurang/mytree}
+  {https://github.com/yokurang/mytree}
+  {A published Rust tool for displaying directory trees with custom filters. 2k+ downloads.}
   \ProjectItemListEnd
 
   \SectionHeading{Skills}
   \ResumeEntryStart
     \ResumeItem{Languages}{ Python, Rust, C++, OCaml, C\#, TypeScript, JavaScript, SQL, Kotlin, Scala, Golang, Coq }
     \ResumeItem{Frameworks}{ React, Vue.js, Next.js, Express.js, Flask, Laravel, AWS (Lambda, DynamoDB) }
+    \ResumeItem{Machine Learning / Data}{ PyTorch, TensorFlow, scikit-learn, XGBoost, Pandas, NumPy, Spark, Kubernetes }
   \ResumeEntryEnd
 \end{document}
