@@ -1,0 +1,317 @@
+\documentclass[letterpaper, 11pt]{article}
+
+% ATS
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Packages
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage[parfill]{parskip}
+
+% Fonts 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{hyperref}
+% Computer Modern Font %
+\usepackage{lmodern}
+
+% Margins 
+\usepackage[top=0.4in, bottom=0.4in, left=0.4in, right=0.4in]{geometry}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\def\sectionlineskip{\medskip} 
+\def\sectionskip{\medskip} 
+\def\namesize{\LARGE}
+
+% URLs (Discouraged)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,   
+    urlcolor=black,
+}
+
+% Customizations
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\pagestyle{empty}
+\urlstyle{same}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Resume Header
+\newcommand{\ResumeHeader}[6]{
+  \noindent
+  \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X}
+    \namesize\MakeUppercase{\textbf{\fullname}} \\
+    #1 \textbar\ #2 \\
+    #3 \textbar\ #4 \textbar\ #5 \textbar\ #6 \\
+  \end{tabularx}
+}
+
+% Header Settings %
+\def \fullname { Alan Matthew }
+
+\def \linkedinlink { https://www.linkedin.com/in/alan-matthew-yk }
+\def \linkedintext { linkedin.com/in/alan-matthew-yk }
+
+\def \phonenumber { +65 8047 3599 }
+
+\def \githublink { https://github.com/yokurang }
+\def \githubtext { github.com/yokurang }
+
+\def \emaillink { mailto:alan.matthew.yk@gmail.com }
+\def \emailtext { alan.matthew.yk@gmail.com }
+
+\def \websitelink { https://yokurang.github.io/ }
+\def \websitetext { yokurang.github.io/ }
+
+\def \address { 9 Jalan Membina, Singapore }
+
+\def \headertype {\ResumeHeader}
+
+\def \entryspacing {-0pt}
+
+\def \linkedin {\href{\linkedinlink}{\linkedintext}}
+\def \phone {{\phonenumber}}
+\def \email {\href{\emaillink}{\emailtext}}
+\def \github {\href{\githublink}{\githubtext}}
+\def \website {\href{\websitelink}{\websitetext}}
+
+\newcommand{\SectionHeading}[1]{
+  \sectionskip
+  \raggedright\raggedbottom\MakeUppercase{\large{#1}}
+  \sectionlineskip
+  \hrule
+  \color{black}
+}
+
+% Entry with Title, Subheading, Date, Location % 
+\newcommand{\ResumeEntryTSDL}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r} 
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-2.835pt} % Adjust this value
+}
+
+% Resume Item List %
+\renewcommand{\labelitemii}{$\bullet$}
+\newcommand{\ResumeItem}[2]{
+  \item{
+    \textbf{#1}{: #2 \vspace{-2.835pt}}
+  }
+}
+
+\newcommand{\ResumeItemDefault}[1]{
+  \item{
+    #1 \vspace{-2.835pt}
+  }
+}
+
+\newcommand{\ResumeProjectItem}[3]{
+  \item{
+    \href{#2}{\textbf{#1}}{: #3 \vspace{-2.835pt}}
+  }
+}
+
+\newcommand{\ResumeSubItem}[2]{\ResumeItem{#1}{#2}\vspace{-2.835pt}}
+\newcommand{\ResumeEntryStart}{\begin{itemize}[leftmargin=0mm, label={}]}
+\newcommand{\ResumeEntryEnd}{\end{itemize}\vspace{-2.835pt}} % Adjust this value
+\newcommand{\ResumeItemListStart}{\begin{itemize}[leftmargin=5mm, label=$\bullet$, itemsep=1mm, parsep=1mm]} % Adjust itemsep and parsep values
+\newcommand{\ResumeItemListEnd}{\end{itemize}}
+\newcommand{\ProjectItemListStart}{\begin{itemize}[leftmargin=*, label=$\bullet$]}
+\newcommand{\ProjectItemListEnd}{\end{itemize}\vspace{\entryspacing}}
+
+\newcommand{\OpenSourceProjectItem}[3]{
+  \item{
+    \href{#1}{\textbf{#2} }\hfill{#3}\vspace{-2.835pt}
+  }
+}
+
+\newcommand{\EduEntry}[4]{%
+  \vspace{2pt}\noindent
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textnormal{#2} \\
+    \multicolumn{2}{@{}l}{#3} \\
+  \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\EduMeta}[3]{%
+  {\normalsize
+    \textbf{Coursework}: #1 \\
+    \textbf{Activities}: #2 \\
+    \textbf{Awards}: #3
+  }\vspace{2pt}
+}
+
+% Document %
+
+\begin{document}
+  \headertype{\address}{\phone}{\email}{\linkedin}{\github}{\website}
+  
+\SectionHeading{Education}
+
+% Yale-NUS
+\EduEntry
+  {Yale\textendash NUS College}
+  {Aug 2020 -- May 2025}
+  {Bachelor of Science (Honours) in Math, Computational and Statistical Sciences \textbar\ GPA: 4.87/5.00}
+  {}
+\EduMeta
+  {Asset Pricing, Statistical Inference, Stochastic Modelling, Machine Learning}
+  {Teaching Assistant for Data Structures \& Algorithms, Probability Theory, Statistical Inference}
+  {Kewalram Chanrai Full Scholarship}
+
+% UWC Li Po Chun
+\EduEntry
+  {UWC Li Po Chun}
+  {Aug 2018 -- May 2020}
+  {International Baccalaureate Diploma (40/45)}
+  {}
+\EduMeta
+  {HL: Math, Physics, Chemistry (7/7/7)}
+  {Working with Domestic Helper Club (US\$5,000 \& 250 books for Wonosobo library); United World Schools (US\$16,500 for schools in Yern Jas); Dragon Dance}
+  {UWC Scholarship}
+
+  \SectionHeading{Experience}
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{DRW}{HFT Proprietary Trading}{Incoming Quantitative Trading Analyst}{Jan 2026}
+  \ResumeItemListStart
+  \ResumeItemDefault{I will be trading stock options on the Hong Kong Stock Exchange, and researching and implementing high-frequency and mid-frequency trading strategies.}
+  \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{Caladan (AlphaLab Capital)}{HFT Market Making}{Software Engineer}{Jul 2025 – Oct 2025}
+  \ResumeItemListStart
+  \ResumeItemDefault{Designed and built a generalized caching layer in Python to manage storage and fast retrieval of large-scale time-series data across S3, SQL, etc., reducing query latency and improving pipeline throughput by 97\%.}
+  \ResumeItemDefault{Reimplemented ETL job services with fault-tolerance and async design (Python event loops, DAG modeling), improving recovery, consistency across dependent tasks, overall maintainability, and clarity of error reporting.}
+  \ResumeItemDefault{Built a fault-tolerant 24/7 ETL service for real-time PnL computation, enforcing invariants for correctness and exposing statistics for business analysis, with infrastructure libraries supporting QuestDB and Grafana logs.}
+  \ResumeItemDefault{Developed and maintained ETL pipelines, automating post-trade and transaction cost analysis (TCA) across high-frequency trading algorithms, delivering insights on hedge timing, execution quality, and price markouts.}
+  \ResumeItemDefault{Designed and implemented robust NAV-based PnL attribution frameworks, producing granular breakdowns of performance by hedge leg, execution venue, etc., for comprehensive session-level trading reviews.}
+  \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{Caladan (AlphaLab Capital)}{HFT Market Making}{Software Engineering Intern}{May 2024 - Aug 2024}
+  \ResumeItemListStart
+  \ResumeItemDefault{Implemented cold and hot path components for C\# trade servers, expanding crypto trading to new exchanges.}
+  \ResumeItemDefault{Developed data ETL pipeline visibility service in Python; Rewrote core services using async to improve speed.}
+  \ResumeItemDefault{Resolved critical bugs in algorithm trading logic and fixed out of memory issues, saving monthly costs by 80\%.}
+  \ResumeItemDefault{Expanded Python analysis libraries for deeper insights into market volume, PnL, and trading statistics.}
+  \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Evooq}{Fintech SaaS}{Software Engineering Intern}{Jan 2024 - Apr 2024}
+    \ResumeItemListStart
+    \ResumeItemDefault{Created a Python LLM chatbot that translated natural language queries into SQL for a MariaDB database.}
+    \ResumeItemDefault{Created a Python tool to generate trading ideas for a given portfolio with specific goals using RAG.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Hatcher+}{Fintech SaaS}{Software Engineering Intern}{May 2023 - Aug 2023}
+    \ResumeItemListStart
+      \ResumeItemDefault{Developed a Python LLM microservice to parse excel company capitalization documents into structured JSONs.}
+      \ResumeItemDefault{Programmed a PHP scheduler leveraging an LLM to predict English sentences and translate foreign languages.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Switcheo Labs}{Cryptocurrency Exchange}{Software Engineering Intern}{Oct 2022 - Dec 2022}
+    \ResumeItemListStart
+    \ResumeItemDefault{Leveraged Golang to automatically link markets and liquidity pools, eliminating manual work and securely allocating USD \$130+ million of capital across the exchange.}
+    \ResumeItemDefault{Implemented a microservice in TypeScript to monitor and collect data on CDP transactions and visualize trading activities using React, serving 35,000 daily visitors.}
+    \ResumeItemDefault{Created a Golang API to aggregate and consolidate data from multiple databases into a single, unified API call, simplifying the information search process for 96,000+ users.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Investree}{P2P Fintech Lending}{Software Engineering Intern}{Feb 2022 - Aug 2022}
+    \ResumeItemListStart
+      \ResumeItemDefault{Implemented new features using Vue.js and Kotlin to improve the presentation of financial statements and key metrics, boosting user reviews by 17\%.}
+      \ResumeItemDefault{Designed and developed a covenant page from scratch using Vue.js and Kotlin, simplifying the contractual agreement process for over 59,000 business loans.}
+      \ResumeItemDefault{Developed and deployed RESTful APIs in Kotlin for data querying, processing, and validation from Postgres databases, serving the frontend needs of over 100,000 users.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Singular Asset Management}{Asset Management}{Equity Trading Intern}{Sep 2021 - Jan 2022}
+    \ResumeItemListStart
+      \ResumeItemDefault{Traded Indonesian equities on IDX, supporting a long-only portfolio with PM; generated 11\% returns.}
+      \ResumeItemDefault{Performed in-depth company analysis, industry research, competitor analysis, ESG analysis, and on-the-ground research to identify key trends across diverse sectors in Indonesia.}
+      \ResumeItemDefault{Liaised with sell-side analysts and industry experts during broker calls and investor conferences to refine market perspectives and uncover new trading opportunities.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{Kredens Capital Management}{Hedge Fund}{Equity Trading Intern}{May 2021 – Aug 2021}
+    \ResumeItemListStart
+      \ResumeItemDefault{Researched US equities and macro trends to pitch short-term trades; generated 17\% portfolio returns.}
+      \ResumeItemDefault{Conducted detailed financial valuations and analyses of public companies in tech, aerospace, pharmaceutical, ride-hailing, defense, and gaming for potential trading opportunities.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \SectionHeading{Leadership}
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Perception Gap}{International Network}{Founder}{Jul 2022 - Jul 2023}
+    \ResumeItemListStart
+      \ResumeItemDefault{Started and manage an international equity research club that grew from 4 friends to a global network of 17 members at institutions like Cornell, LSE, UPenn, Wellesley, HKU, and HKUST.}
+      \ResumeItemDefault{Taught accounting and financial modelling to members, leading them to write comprehensive equity research reports on Tesla, Boeing, Lockheed Martin, Grab, and more.}
+      \ResumeItemDefault{Organized mock interviews and quiz nights so members can network, sharpen business knowledge, and share market happenings—helping third-year members land investment banking and private equity internships.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \SectionHeading{Open Source}
+  \ResumeEntryStart
+  \OpenSourceProjectItem{https://github.com/panglesd/diffcessible}{panglesd/diffcessible}{Accessible Diff Viewer (OCaml)}
+  \ResumeItemListStart
+    \ResumeItemDefault{Developed side-by-side diff rendering with numbered lines, color highlighting, etc., to enhance user experience.}
+    \ResumeItemDefault{Implemented data structures (e.g., zipper, block-based storage) and linear-space diff algorithms to enable precise word-level comparisons across multi-line changes and improve performance in large-scale file navigation.}
+  \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \SectionHeading{Projects}
+  \ProjectItemListStart
+  \ResumeProjectItem{yokurang/poe2-arbitrage}
+  {https://github.com/yokurang/path-of-elixe}
+  {Engineered a scalable ETL and ML pipeline to scrape item prices/attributes and estimate FX rates via VWAP. Built both regularized regression and closed-form pricing models, selecting the best per item, and applied residual diagnostics in an iterative feedback loop to refine accuracy. Implemented a live client to continuously scan and detect undervalued items across multiple quote currencies in real time to users.}
+
+  \ResumeProjectItem{yokurang/strategy-behaviour-analysis}
+  {https://github.com/yokurang/trading-strategy-behavior-analysis}
+  {Investigated trade direction predictability using classification models. Engineered features and systematically trained and applied different models to understand trading behavior.}
+
+  \ResumeProjectItem{yokurang/mytree}
+  {https://github.com/yokurang/mytree}
+  {A published Rust tool for displaying directory trees with custom filters. 2k+ downloads.}
+
+  \ResumeProjectItem{yokurang/strategy-markout-analysis}
+  {https://github.com/yokurang/trading-strategy-markout-analysis}
+  {Performed post-trade analysis on crypto data by identifying key one-hour windows, computing markouts, and visualizing strategy behaviour, trade profiles, and drawdowns.}
+
+  \ResumeProjectItem{yokurang/passphrase-generator}
+  {https://github.com/yokurang/passphrase-generator}
+  {A \textbf{Rust} app to generate secure passphrases using Markov chains.}
+  \ResumeProjectItem{yokurang/ocaml-chat}
+  {https://github.com/yokurang/ocaml-chat}
+  {An OCaml one-to-one chat app using TCP for real-time messaging and RTT.}
+  \ProjectItemListEnd
+
+  \SectionHeading{Skills}
+  \ResumeEntryStart
+    \ResumeItem{Languages}{ Python, Rust, C++, OCaml, C\#, TypeScript, JavaScript, SQL, Kotlin, Scala, Golang, Coq }
+    \ResumeItem{Frameworks}{ React, Next.js, Flask, PyTorch, TensorFlow, scikit-learn, AWS (Lambda, DynamoDB) }
+  \ResumeEntryEnd
+
+\end{document}

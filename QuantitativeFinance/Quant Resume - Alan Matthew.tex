@@ -1,0 +1,263 @@
+\documentclass[letterpaper, 11pt]{article}
+
+% ATS
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Packages
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage[parfill]{parskip}
+
+% Fonts 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{hyperref}
+% Computer Modern Font %
+\usepackage{lmodern}
+
+% Margins 
+\usepackage[top=0.4in, bottom=0.4in, left=0.4in, right=0.4in]{geometry}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\def\sectionlineskip{\medskip} 
+\def\sectionskip{\medskip} 
+\def\namesize{\LARGE}
+
+% URLs (Discouraged)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,   
+    urlcolor=black,
+}
+
+% Customizations
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\pagestyle{empty}
+\urlstyle{same}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Resume Header
+\newcommand{\ResumeHeader}[6]{
+  \noindent
+  \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X}
+    \namesize\MakeUppercase{\textbf{\fullname}} \\
+    #1 \textbar\ #2 \\
+    #3 \textbar\ #4 \textbar\ #5 \textbar\ #6 \\
+  \end{tabularx}
+}
+
+% Header Settings %
+\def \fullname { Alan Matthew }
+
+\def \linkedinlink { https://www.linkedin.com/in/alan-matthew-yk }
+\def \linkedintext { linkedin.com/in/alan-matthew-yk }
+
+\def \phonenumber { +65 8047 3599 }
+
+\def \githublink { https://github.com/yokurang }
+\def \githubtext { github.com/yokurang }
+
+\def \emaillink { mailto:alan.matthew.yk@gmail.com }
+\def \emailtext { alan.matthew.yk@gmail.com }
+
+\def \websitelink { https://yokurang.github.io/ }
+\def \websitetext { yokurang.github.io/ }
+
+\def \address { 9 Jalan Membina, Singapore }
+
+\def \headertype {\ResumeHeader}
+
+\def \entryspacing {-0pt}
+
+\def \linkedin {\href{\linkedinlink}{\linkedintext}}
+\def \phone {{\phonenumber}}
+\def \email {\href{\emaillink}{\emailtext}}
+\def \github {\href{\githublink}{\githubtext}}
+\def \website {\href{\websitelink}{\websitetext}}
+
+\newcommand{\SectionHeading}[1]{
+  \sectionskip
+  \raggedright\raggedbottom\MakeUppercase{\large{#1}}
+  \sectionlineskip
+  \hrule
+  \color{black}
+}
+
+% Entry with Title, Subheading, Date, Location % 
+\newcommand{\ResumeEntryTSDL}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r} 
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-2.835pt} % Adjust this value
+}
+
+% Resume Item List %
+\renewcommand{\labelitemii}{$\bullet$}
+\newcommand{\ResumeItem}[2]{
+  \item{
+    \textbf{#1}{: #2 \vspace{-2.835pt}}
+  }
+}
+
+\newcommand{\ResumeItemDefault}[1]{
+  \item{
+    #1 \vspace{-2.835pt}
+  }
+}
+
+\newcommand{\ResumeProjectItem}[3]{
+  \item{
+    \href{#2}{\textbf{#1}}{: #3 \vspace{-2.835pt}}
+  }
+}
+
+\newcommand{\ResumeSubItem}[2]{\ResumeItem{#1}{#2}\vspace{-2.835pt}}
+\newcommand{\ResumeEntryStart}{\begin{itemize}[leftmargin=0mm, label={}]}
+\newcommand{\ResumeEntryEnd}{\end{itemize}\vspace{-2.835pt}} % Adjust this value
+\newcommand{\ResumeItemListStart}{\begin{itemize}[leftmargin=5mm, label=$\bullet$, itemsep=1mm, parsep=1mm]} % Adjust itemsep and parsep values
+\newcommand{\ResumeItemListEnd}{\end{itemize}}
+\newcommand{\ProjectItemListStart}{\begin{itemize}[leftmargin=*, label=$\bullet$]}
+\newcommand{\ProjectItemListEnd}{\end{itemize}\vspace{\entryspacing}}
+
+\newcommand{\OpenSourceProjectItem}[3]{
+  \item{
+    \href{#1}{\textbf{#2} }\hfill{#3}\vspace{-2.835pt}
+  }
+}
+
+\newcommand{\EduEntry}[4]{%
+  \vspace{2pt}\noindent
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textnormal{#2} \\
+    \multicolumn{2}{@{}l}{#3} \\
+  \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\EduMeta}[3]{%
+  {\normalsize
+    \textbf{Coursework}: #1 \\
+    \textbf{Activities}: #2 \\
+    \textbf{Awards}: #3
+  }\vspace{2pt}
+}
+
+% Document %
+
+\begin{document}
+  \headertype{\address}{\phone}{\email}{\linkedin}{\github}{\website}
+  
+  \SectionHeading{Education}
+  % Yale-NUS
+  \EduEntry
+    {Yale\textendash NUS College}
+    {Aug 2020 -- May 2025}
+    {Bachelor of Science (Honours) in Math, Computational and Statistical Sciences \textbar\ GPA: 4.87/5.00}
+    {}
+  \EduMeta
+    {Asset Pricing, Statistical Inference, Stochastic Modelling, Machine Learning}
+    {Teaching Assistant for Data Structures \& Algorithms, Probability Theory, Statistical Inference}
+    {Kewalram Chanrai Full Scholarship}
+
+  \SectionHeading{Experience}
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{DRW}{HFT Proprietary Trading}{Incoming Quantitative Trading Analyst}{Jan 2026}
+  \ResumeItemListStart
+  \ResumeItemDefault{I will be trading stock options on the Hong Kong Stock Exchange, and researching and implementing high-frequency and mid-frequency trading strategies.}
+  \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{Caladan}{HFT Market Making}{Software Engineer}{Jul 2025 – Oct 2025}
+  \ResumeItemListStart
+  \ResumeItemDefault{Developed and maintained ETL pipelines, automating post-trade and transaction cost analysis (TCA) across high-frequency trading algorithms, delivering insights on hedge timing, execution quality, and price markouts.}
+  \ResumeItemDefault{Designed and implemented robust NAV-based PnL attribution frameworks, producing granular breakdowns of performance by hedge leg, execution venue, etc., for comprehensive session-level trading reviews.}
+  % \ResumeItemDefault{Built custom PnL monitoring and reporting pipelines for OTC trading to surface risks of strategy arbitrage, hedge inefficiency, and counterparty exposure, providing actionable insights to strengthen risk management.}
+  \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{Caladan}{HFT Market Making}{Software Engineering Intern}{May 2024 - Aug 2024}
+  \ResumeItemListStart
+  \ResumeItemDefault{Engineered low-latency trading execution servers and market quote polling services for new exchanges.}
+  \ResumeItemDefault{Monitored trading algorithms and adjusted trading execution parameters depending on market conditions.}
+  \ResumeItemDefault{Monitored and resolved production issues in core trading algorithms, ensuring correct trading behavior.}
+  \ResumeItemDefault{Expanded Python analysis libraries for deeper insights into market volume, PnL, and trading statistics.}
+  \ResumeItemDefault{Built ETL visibility tools and debugged out of memory issues in Python, reducing AWS costs by 80\%.}
+  \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  % \ResumeEntryStart
+  %   \ResumeEntryTSDL{Switcheo Labs}{Cryptocurrency Exchange}{Software Engineering Intern}{Oct 2022 - Dec 2022}
+  %   \ResumeItemListStart
+  %   \ResumeItemDefault{Automated market and liquidity pool allocation logic in Golang for DeFi trading across 90+ markets.}
+  %   \ResumeItemDefault{Developed a TypeScript service for monitoring debt transactions and visualizing trades using React.}
+  %   % \ResumeItemDefault{Developed a Telegram bot to monitor and alert support of stalled Carbon blockchain trades.}
+  %   \ResumeItemListEnd
+  % \ResumeEntryEnd
+
+  % \SectionHeading{Open Source}
+  % \ResumeEntryStart
+  % \OpenSourceProjectItem{https://github.com/panglesd/diffcessible}{panglesd/diffcessible}{Accessible Diff Viewer}
+  % \ResumeItemListStart
+  % \ResumeItemDefault{Designed and implemented optimized data structures (e.g., Zipper, blocks) and algorithms for word-level diff views in \textbf{OCaml}, improving file comparison granularity and navigation.}
+  % \ResumeItemDefault{Programmed side-by-side view and integrated pager functionality for navigation of large diff outputs.}
+  % % \ResumeItemDefault{Wrote a linear-space implementation of Myers diff and levenshtein distance algorithm in \textbf{OCaml}.}
+  % \ResumeItemListEnd
+  % \ResumeEntryEnd
+
+  \ResumeEntryStart
+    \ResumeEntryTSDL{Singular Asset Management}{Asset Management}{Equity Trading Intern}{Sep 2021 - Jan 2022}
+    \ResumeItemListStart
+      \ResumeItemDefault{Traded Indonesian equities on IDX, supporting a long-only portfolio with PM; generated 11\% returns.}
+      % \ResumeItemDefault{Performed in-depth company analysis, industry research, competitor analysis, ESG analysis, and on-the-ground research to identify key trends across diverse sectors in Indonesia.}
+      % \ResumeItemDefault{Created investment pitch decks, leveraging fundamental analysis to recommend long-term trading opportunities from the Jakarta Stock Exchange; generated a 27\% return on recommended picks.}
+      % \ResumeItemDefault{Liaised with sell-side analysts and industry experts during broker calls and investor conferences to refine market perspectives and uncover new trading opportunities.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \ResumeEntryStart
+  \ResumeEntryTSDL{Kredens Capital Management}{Hedge Fund}{Equity Trading Intern}{May 2021 – Aug 2021}
+    \ResumeItemListStart
+      \ResumeItemDefault{Researched US equities and macro trends to pitch short-term trades; generated 17\% portfolio returns.}
+    \ResumeItemListEnd
+  \ResumeEntryEnd
+
+  \SectionHeading{Projects}
+  \ProjectItemListStart
+  \ResumeProjectItem{yokurang/poe2-arbitrage}
+  {https://github.com/yokurang/path-of-elixe}
+  {Engineered a scalable ETL and ML pipeline to scrape item prices/attributes and estimate FX rates via VWAP. Built both regularized regression and closed-form pricing models, selecting the best per item, and applied residual diagnostics in an iterative feedback loop to refine accuracy. Implemented a live client to continuously scan and detect undervalued items across multiple quote currencies in real time to users.}
+
+  \ResumeProjectItem{yokurang/strategy-behaviour-analysis}
+  {https://github.com/yokurang/trading-strategy-behavior-analysis}
+  {Investigated trade direction predictability using classification models.
+  Engineered features and systematically trained and applied different models to understand trading behavior.}
+
+  % \ResumeProjectItem{yokurang/strategy-markout-analysis}
+  % {https://github.com/yokurang/trading-strategy-markout-analysis}
+  % {Performed post-trade analysis on crypto data by identifying key one-hour windows, computing markouts, and visualizing strategy behaviour, trade profiles, and drawdowns.}
+
+  \ResumeProjectItem{yokurang/mytree}
+  {https://github.com/yokurang/mytree}
+  {A published Rust tool for displaying directory trees with custom filters. 2k+ downloads.}
+  \ProjectItemListEnd
+
+  \SectionHeading{Skills}
+  \ResumeEntryStart
+    \ResumeItem{Languages}{ Python, Rust, C++, OCaml, C\#, TypeScript, JavaScript, SQL, Kotlin, Scala, Golang, Coq }
+    \ResumeItem{Frameworks}{ React, Next.js, Flask, PyTorch, TensorFlow, scikit-learn, AWS (Lambda, DynamoDB) }
+  \ResumeEntryEnd
+\end{document}
