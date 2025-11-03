@@ -170,31 +170,36 @@
     {Teaching Assistant for Data Structures \& Algorithms, Probability Theory, Statistical Inference}
     {Kewalram Chanrai Full Scholarship}
 
-  \SectionHeading{Experience}
+  \vspace{-5pt}
 
+  \SectionHeading{Experience}
   \ResumeEntryStart
-  \ResumeEntryTSDL{Caladan (AlphaLab Capital)}{HFT Market Making}{Software Engineer}{Jul 2025 – Present}
-  \ResumeItemListStart
-  \ResumeItemDefault{Designed and built a generalised caching layer in Python to manage storage and fast retrieval of large-scale time-series data across S3, SQL, and etc., reducing query latency and improving pipeline throughput by 97\%.}
-  \ResumeItemDefault{Reimplemented ETL job services with fault-tolerance and async design (Python event loops, DAG modeling), improving recovery, consistency across dependent tasks, overall maintainability, and clarity of error reporting.}
-  \ResumeItemDefault{Built a fault-tolerant 24/7 ETL service for real-time PnL computation, enforcing invariants for correctness and exposing statistics for business analysis, with infrastructure libraries supporting QuestDB and Grafana logs.}
-  % utilities to efficiently query large quantities of time-series data and cache
-  % reimplemented daily jobs more robustly and efficiently, speeding up time to access data and reports by 30% 
-  \ResumeItemListEnd
+    \ResumeEntryTSDL{DRW}{HFT Proprietary Trading}{Incoming Quantitative Trading Analyst}{Jan 2026}
+    \ResumeItemListStart
+      \ResumeItemDefault{Will trade stock options on HKEX, researching and implementing high-frequency and mid-frequency strategies.}
+    \ResumeItemListEnd
   \ResumeEntryEnd
 
-
   \ResumeEntryStart
-  \ResumeEntryTSDL{Caladan (AlphaLab Capital)}{HFT Market Making}{Software Engineering Intern}{May 2024 - Aug 2024}
+    \ResumeEntryTSDL{Caladan}{HFT Market Making}{Software Engineer}{Jul 2025 – Present}
+    \ResumeItemListStart
+      \ResumeItemDefault{Built generalised caching layer for time-series datasets, reducing query latency from seconds to milliseconds.}
+      \ResumeItemDefault{Re-engineered distributed ETL workflows using DAG modeling with fault-tolerant retries for high-availability.}
+      \ResumeItemDefault{Developed real-time PnL computation service with streaming validation and metric exposure to Grafana.}
+      \ResumeItemDefault{Created modular Python services for fills and market research with generalised architecture for cross-team reuse.}
+    \ResumeItemListEnd
+\ResumeEntryEnd
+
+\ResumeEntryStart
+  \ResumeEntryTSDL{Caladan}{HFT Market Making}{Software Engineering Intern}{May 2024 – Aug 2024}
   \ResumeItemListStart
   \ResumeItemDefault{Implemented cold and hot path components for C\# trade servers, expanding crypto trading to new exchanges.}
   \ResumeItemDefault{Developed data ETL pipeline visibility service in Python; Rewrote core services using async to improve speed.}
   \ResumeItemDefault{Resolved critical bugs in algorithm trading logic and fixed out of memory issues, saving monthly costs by 80\%.}
   % \ResumeItemDefault{Enhanced C\# trading algorithm logic and resolved critical bugs, improving accuracy and reducing latency.}
   % \ResumeItemDefault{Expanded \textbf{Python} analysis libraries for deeper insights into market volume, pnl, and trading statistics.}
-  % \ResumeItemDefault{Debugged out of memory issues and optimized Python resource usage, saving AWS costs by 80\%.}
   \ResumeItemListEnd
-  \ResumeEntryEnd
+\ResumeEntryEnd
 
   \ResumeEntryStart
     \ResumeEntryTSDL{Evooq}{Fintech SaaS}{Software Engineering Intern}{Jan 2024 - Apr 2024}
@@ -281,7 +286,7 @@
   
     \ResumeProjectItem{yokurang/poe2-arbitrage}
     {https://github.com/yokurang/path-of-elixe}
-    {Engineered a scalable ETL and ML pipeline to scrape item prices/attributes and estimate FX rates via VWAP. Built both regularized regression and closed-form pricing models, selecting the best per item, and applied residual diagnostics in an iterative feedback loop to refine accuracy. Implemented a live client to continuously scan and detect undervalued items across multiple quote currencies in real time to users.}
+    {Engineered ETL and ML pipeline to scrape Path of Exile item prices and estimate FX via VWAP. Researched features and built regularized regression and closed-form models with residual diagnostics. Deployed live client to detect undervalued items across multiple currencies in real time.}
 
     \ResumeProjectItem{yokurang/mytree}
     {https://github.com/yokurang/mytree}
