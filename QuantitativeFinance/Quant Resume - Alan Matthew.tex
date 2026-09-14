@@ -63,7 +63,7 @@
 \def \linkedinlink { https://www.linkedin.com/in/alan-matthew-yk }
 \def \linkedintext { linkedin.com/in/alan-matthew-yk }
 
-\def \phonenumber { +65 8047 3599 }
+\def \phonenumber { +65 8145 3250 }
 
 \def \githublink { https://github.com/yokurang }
 \def \githubtext { github.com/yokurang }
@@ -74,7 +74,7 @@
 \def \websitelink { https://yokurang.github.io/ }
 \def \websitetext { yokurang.github.io/ }
 
-\def \address { 9 Jalan Membina, Singapore }
+\def \address { 346 River Valley Road, Singapore }
 
 \def \headertype {\ResumeHeader}
 
@@ -173,14 +173,16 @@
   \SectionHeading{Experience}
 
   \ResumeEntryStart
-  \ResumeEntryTSDL{DRW}{HFT Proprietary Trading}{Quantitative Trading Analyst}{Jan 2026}
+  \ResumeEntryTSDL{DRW}{HFT Stock Options Trading}{Quantitative Trading Analyst}{Jan 2026}
   \ResumeItemListStart
-  \ResumeItemDefault{Options trading}
+  \ResumeItemDefault{Conducted high-frequency signal research, analyzing market microstructure and large-scale trading data to identify and evaluate systematic trading opportunities, market inefficiencies, and anomalies in market behavior.}
+  \ResumeItemDefault{Developed and refined volatility and interest rate models to support options pricing, and relative-value analysis.}
+  \ResumeItemDefault{Actively traded options and managed live systematic strategies, monitoring execution, and portfolio exposures.}
   \ResumeItemListEnd
   \ResumeEntryEnd
 
   \ResumeEntryStart
-  \ResumeEntryTSDL{Caladan}{HFT Market Making}{Software Engineer}{Jul 2025 – Oct 2025}
+  \ResumeEntryTSDL{Caladan (AlphaLab Capital)}{Cryptocurrency Market Making}{Software Engineer}{Jul 2025 - Oct 2025}
   \ResumeItemListStart
   \ResumeItemDefault{Developed and maintained ETL pipelines, automating post-trade and transaction cost analysis (TCA) across high-frequency trading algorithms, delivering insights on hedge timing, execution quality, and price markouts.}
   \ResumeItemDefault{Designed and implemented robust NAV-based PnL attribution frameworks, producing granular breakdowns of performance by hedge leg, execution venue, etc., for comprehensive session-level trading reviews.}
@@ -189,7 +191,7 @@
   \ResumeEntryEnd
 
   \ResumeEntryStart
-  \ResumeEntryTSDL{Caladan}{HFT Market Making}{Software Engineering Intern}{May 2024 - Aug 2024}
+  \ResumeEntryTSDL{Caladan (AlphaLab Capital)}{Cryptocurrency Market Making}{Software Engineering Intern}{May 2024 - Aug 2024}
   \ResumeItemListStart
   \ResumeItemDefault{Engineered low-latency trading execution servers and market quote polling services for new exchanges.}
   \ResumeItemDefault{Monitored trading algorithms and adjusted trading execution parameters depending on market conditions.}
@@ -210,19 +212,18 @@
 
   \SectionHeading{Open Source}
   \ResumeEntryStart
-  \OpenSourceProjectItem{https://github.com/panglesd/diffcessible}{panglesd/diffcessible}{Accessible Diff Viewer}
+  \OpenSourceProjectItem{https://github.com/panglesd/diffcessible}{panglesd/diffcessible}{Accessible Diff Viewer (OCaml)}
   \ResumeItemListStart
-  \ResumeItemDefault{Designed and implemented optimized data structures (e.g., Zipper, blocks) and algorithms for word-level diff views in \textbf{OCaml}, improving file comparison granularity and navigation.}
-  \ResumeItemDefault{Programmed side-by-side view and integrated pager functionality for navigation of large diff outputs.}
-  % \ResumeItemDefault{Wrote a linear-space implementation of Myers diff and levenshtein distance algorithm in \textbf{OCaml}.}
+    \ResumeItemDefault{Developed side-by-side diff rendering with numbered lines, color highlighting, etc., to enhance user experience.}
+    \ResumeItemDefault{Implemented data structures (e.g., zipper, block-based storage) and linear-space diff algorithms to enable precise word-level comparisons across multi-line changes and improve performance in large-scale file navigation.}
   \ResumeItemListEnd
   \ResumeEntryEnd
-
+  
   \SectionHeading{Projects}
   \ProjectItemListStart
   \ResumeProjectItem{yokurang/poe2-arbitrage}
   {https://github.com/yokurang/path-of-elixe}
-  {Engineered a scalable ETL and ML pipeline to scrape item prices/attributes and estimate FX rates via VWAP. Built both regularized regression and closed-form pricing models, selecting the best per item, and applied residual diagnostics in an iterative feedback loop to refine accuracy. Implemented a live client to continuously scan and detect undervalued items across multiple quote currencies in real time to users.}
+  {Built an ML pipeline to scrape item prices and attributes and estimate FX rates via VWAP. Developed regression and closed-form models to estimate attribute contributions to item value.}
 
   % \ResumeProjectItem{yokurang/strategy-behaviour-analysis}
   % {https://github.com/yokurang/trading-strategy-behavior-analysis}
@@ -233,9 +234,10 @@
   % {https://github.com/yokurang/trading-strategy-markout-analysis}
   % {Performed post-trade analysis on crypto data by identifying key one-hour windows, computing markouts, and visualizing strategy behaviour, trade profiles, and drawdowns.}
 
-  % \ResumeProjectItem{yokurang/mytree}
-  % {https://github.com/yokurang/mytree}
-  % {A published Rust tool for displaying directory trees with custom filters. 2k+ downloads.}
+  \ResumeProjectItem{yokurang/mytree}
+  {https://github.com/yokurang/mytree}
+  {A published Rust tool for displaying directory trees with custom filters. 2k+ downloads.}
+  
   \ProjectItemListEnd
 
   \SectionHeading{Skills}
